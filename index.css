@@ -1,0 +1,267 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Roboto+Slab:wght@300&family=Shantell+Sans:ital,wght@1,300&family=Tilt+Prism&display=swap');
+
+
+  *{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+  }
+  /* img{
+    width: 200px;
+    height: 80px;
+  } */
+  nav{
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+    margin-left: 100px;
+    align-items: center;
+  }
+  nav .logo2{
+    width: 100px;
+
+  }
+  nav ul li{
+   display: inline-block; 
+   list-style: none;
+   /* margin top right bottom left */
+   margin: 10px 20px  10px 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color:black;
+  font-weight: bold;
+
+}
+
+/* psuedo class special effect */
+/*  selector:psuedo-class name{style}// style means property:value*/
+
+nav ul li a:hover{
+    color:crimson
+}
+.title{
+  margin-left: 8%;
+  margin-top: 13%;
+}
+.title h1{
+  font-size: 50px;
+  color:black ;
+  margin-bottom: 20px;
+}
+.title span{
+  color: green;
+
+}
+.title p{
+  color:#555 ;
+  font-weight: bold;
+  line-height: 25px;
+
+}
+.title a{
+  background: black;
+  padding: 10px 18px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  margin: 30px 0px;
+  border-radius: 5px;
+
+}
+.images{
+  width: 45%;
+  height:80%;
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+#about{
+  margin-left: 8%;
+  margin-top: 13%;
+  margin-right: 8%;
+}
+
+.heading{
+  text-align: center;
+}
+.heading2{
+  font-size: 30px;
+}
+.heading span{
+  font-size:20px ;
+  font-weight: bold;
+  color: brown;
+}
+#about-img{
+  width: 300px;
+  height: 300px;
+  border-radius: 1rem;
+}
+  .about-content{
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  /* .about-image img{
+    width: 50%;
+    height: 50%;
+    border-radius: 1rem;
+
+  } */
+  .about-text{
+    font-size: 18px;
+    font-weight: 700px;
+    text-align: justify;
+    
+  }
+.information{
+  margin: 1rem 0 1.4rem;
+}
+.information  .info-box{
+  display: flex;
+  align-items: center;
+}
+.information  .info-box span{
+  margin-left: 10px;
+  font-weight: 700px;
+  padding: 10px;
+}
+html{
+  scroll-behavior: smooth;
+}
+#skill{
+  margin-left: 8%;
+  margin-top: 13%;
+  margin-right: 8%;
+}
+.skill-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 2rem;
+}
+#image{
+  width: 60% ;
+  height: 300px;
+  object-position: center;
+   margin-left: 300px;
+  margin-top: 20px;
+  
+  border-radius: 2rem;
+}
+ #skill-image{
+  width: 100%;
+  height: 30px;
+   border-radius: 1rem; 
+ }
+.bar-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  margin-bottom: 1rem;
+}
+.bar-box h3,span{
+  font-size: 1,1rem;
+  font-weight: 500;
+}
+.light-bar{
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: darkred;
+  border-radius: 0.5rem;
+}
+.percent-bar{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.5rem;
+  background-color: cyan;
+  border-radius: 0.5rem;
+}
+.html-bar{
+  width: 96%;
+}
+.css-bar{
+  width: 92%;
+}
+.js-bar{
+  width: 90%;
+}
+.react-bar{
+  width: 87%;
+} 
+#contact{
+  margin-left: 8%;
+  margin-top: 13%;
+  margin-right: 8%;
+}
+.iconDiv{
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 13px;
+}
+.icon i{
+  font-size:larger;
+}
+.icon:hover{
+  
+  background-image: linear-gradient(180deg, red, yellow);
+  color: azure;
+}
+footer{
+  margin-top: 2rem;
+  font-weight:bold ;
+}
+.up-arrow{
+  float: right;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem;
+  background-image: linear-gradient(180deg, red, yellow);
+  
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  background-color: coral;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: black;
+  border-radius: 10px;
+}
